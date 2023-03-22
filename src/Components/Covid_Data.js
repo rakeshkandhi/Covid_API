@@ -19,7 +19,6 @@ const Covid_Data = () => {
   }, []);
 
   function handleChange(e) {
-    // search input 
     setSearch(e.target.value);
   }
 
