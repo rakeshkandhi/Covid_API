@@ -20,11 +20,7 @@ const Covid_Data = () => {
   function handleChange(e) {
     // for setting the input to title case
     const input = e.target.value;
-    const titleCaseInput = input
-      .toLowerCase()
-      .split(" ")
-      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(" ");
+    const titleCaseInput = input.toLowerCase().split(" ").map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
     setSearch(titleCaseInput);
   }
 
