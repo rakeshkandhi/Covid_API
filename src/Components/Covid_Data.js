@@ -17,8 +17,8 @@ const Covid_Data = () => {
   useEffect(() => {
     getCovidData();
   }, []);
-// for setting the input to title case
   function handleChange(e) {
+    // for setting the input to title case
     const input = e.target.value;
     const titleCaseInput = input
       .toLowerCase()
