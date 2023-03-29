@@ -19,7 +19,13 @@ const Covid_Data = () => {
   }, []);
 
   function handleChange(e) {
-    setSearch(e.target.value);
+    const input = e.target.value;
+    const titleCaseInput = input
+      .toLowerCase()
+      .split(" ")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" ");
+    setSearch(titleCaseInput);
   }
 
   return (
